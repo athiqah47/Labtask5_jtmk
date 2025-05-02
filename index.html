@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JTMK Landing Page</title>
+
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+  <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div data-role="page" id="home">
+    <div data-role="header" data-position="fixed">
+      <div style="display: flex; align-items: center; justify-content: space-between; padding: 5px 10px;">
+        <div style="display: flex; align-items: center;">
+          <img src="logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+          <h1 style="margin: 0; font-size: 16px;">JABATAN TEKNOLOGI MAKLUMAT & KOMUNIKASI</h1>
+        </div>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" data-icon="home" class="ui-btn-active">HOME</a></li>
+            <li><a href="#about" data-icon="info">ABOUT</a></li>
+            <li><a href="#projects" data-icon="grid">PROJECTS</a></li>
+            <li><a href="#contact" data-icon="phone">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="content" class="intro">
+      <h1>HEY, MY NAME IS JTMK</h1>
+      <p>JTMK is the Department of Information and Communication Technology (JTMK) offering DDT courses (Diploma
+        in
+        Information Technology - Digital Technology) at Seberang Perai Polytechnic (PSP).</p>
+      <a href="#projects" data-role="button">PROJECTS</a>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="gambar 1.jpeg" style="width:100%">
+        <div class="text">"Mastering practical skills in our JTMK lab, equipping students with in-depth
+          knowledge of computer hardware."</div>
+      </div>
+
+      <div class="slide fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="Pertandingan Technology Innovation Competition.png" style="width:100%">
+        <div class="text">"Inspiration and insights from 'CEO Talk: A Day with IBM' at JTMK! Our students
+          had an exclusive opportunity to explore the future of technology with industry leaders."</div>
+      </div>
+
+      <div class="slide fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Makmal Multimedia2.jpeg" style="width:100%">
+        <div class="text">"The digital future starts here! An interactive learning atmosphere in the JTMK
+          computer lab, where students hone the latest technology skills."</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="social-sidebar">
+      <a href="#"><img src="linkedin.png" alt="LinkedIn" /></a>
+      <a href="#"><img src="github.png" alt="GitHub" /></a>
+      <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+      <a href="#"><img src="youtube.png" alt="YouTube" /></a>
+      <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+    </div>
+
+  </div>
+
+  <div data-role="page" id="about">
+    <div data-role="header" data-position="fixed">
+      <div style="display: flex; align-items: center; justify-content: space-between; padding: 5px 10px;">
+        <div style="display: flex; align-items: center;">
+          <img src="logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+          <h1 style="margin: 0; font-size: 16px;">JABATAN TEKNOLOGI MAKLUMAT & KOMUNIKASI</h1>
+        </div>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" data-icon="home">HOME</a></li>
+            <li><a href="#about" data-icon="info" class="ui-btn-active">ABOUT</a></li>
+            <li><a href="#projects" data-icon="grid">PROJECTS</a></li>
+            <li><a href="#contact" data-icon="phone">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="content">
+      <ul data-role="listview" data-inset="true">
+        <li class="person-card">
+          <div class="image-container">
+            <img src="member1.jpg" alt="Miftahul Jannah" class="profile-image">
+          </div>
+          <div class="info-container">
+            <h3>Miftahul Jannah Binti Samsudin</h3>
+            <p class="title">Head of Department</p>
+            <p><span class="icon">📞</span> <a href="tel:011-69590979">011-69590979</a></p>
+            <a href="mailto:mistahuljannah08@gmail.com" class="contact-button" data-role="button" data-icon="mail"
+              data-inline="true">Email</a>
+          </div>
+        </li>
+        <li class="person-card">
+          <div class="image-container">
+            <img src="member2.jpg" alt="Nur Athiqah" class="profile-image">
+          </div>
+          <div class="info-container">
+            <h3>Nur Athiqah Binti Zaidi</h3>
+            <p class="title">Program Head (Software Track)</p>
+            <p><span class="icon">📞</span> <a href="tel:010-4575854">010-4575854</a></p>
+            <a href="mailto:nurathiqah4647@gmail.com" class="contact-button" data-role="button" data-icon="mail"
+              data-inline="true">Email</a>
+          </div>
+        </li>
+        <li class="person-card">
+          <div class="image-container">
+            <img src="member3.jpg" alt="Nurul Aishatul" class="profile-image">
+          </div>
+          <div class="info-container">
+            <h3>Nurul Aishatul Balqis Binti Zainol</h3>
+            <p class="title">Program Head (Network Track)</p>
+            <p><span class="icon">📞</span> <a href="tel:019-2838660">019-2838660</a></p>
+            <a href="mailto:aishatulbalqiss@gmail.com" class="contact-button" data-role="button" data-icon="mail"
+              data-inline="true">Email</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div data-role="page" id="projects">
+    <div data-role="header" data-position="fixed">
+      <div style="display: flex; align-items: center; justify-content: space-between; padding: 5px 10px;">
+        <div style="display: flex; align-items: center;">
+          <img src="logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+          <h1 style="margin: 0; font-size: 16px;">JABATAN TEKNOLOGI MAKLUMAT & KOMUNIKASI</h1>
+        </div>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" data-icon="home">HOME</a></li>
+            <li><a href="#about" data-icon="info">ABOUT</a></li>
+            <li><a href="#projects" class="ui-btn-active" data-icon="grid">PROJECTS</a></li>
+            <li><a href="#contact" data-icon="phone">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="content">
+      <h2 style="text-align: center;">Our Projects</h2>
+
+      <ul data-role="listview" data-inset="true">
+        <li>
+          <img src="network.png" alt="Network Infrastructure Setup">
+          <h3>Network Infrastructure Setup</h3>
+          <p>Designing and implementing a secure and efficient network infrastructure for PSP.</p>
+          <a href="Network Infrastructure Concepts.pdf" target="_blank" data-role="button" data-icon="arrow-r">View
+            Report</a>
+        </li>
+
+        <li>
+          <img src="web developer.jpg" alt="E-Learning Platform Development">
+          <h3>E-Learning Platform Development</h3>
+          <p>Creating a comprehensive online learning platform for students and educators.</p>
+          <a href="E-Learning Development.pdf" target="_blank" data-role="button" data-icon="arrow-r">View
+            Report</a>
+        </li>
+
+        <li>
+          <img src="database.png" Student Database Management System">
+          <h3>Student Database Management System</h3>
+          <p>Developing a robust database system for managing student information efficiently.</p>
+          <a href="DATABASE MANAGEMENT SYSTEMS.pdf" target="_blank" data-role="button" data-icon="arrow-r">View
+            Report</a>
+        </li>
+
+        <li>
+          <img src="security.jpg" alt="Cybersecurity Awareness Training Module">
+          <h3>Cybersecurity Awareness Training Module</h3>
+          <p>Designing an interactive module to educate users on cybersecurity best practices.</p>
+          <a href="Cybersecurity Awareness Training Module.pdf" target="_blank" data-role="button"
+            data-icon="arrow-r">View
+            Report</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div data-role="page" id="contact">
+    <div data-role="header" data-position="fixed">
+      <div style="display: flex; align-items: center; justify-content: space-between; padding: 5px 10px;">
+        <div style="display: flex; align-items: center;">
+          <img src="logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+          <h1 style="margin: 0; font-size: 16px;">JABATAN TEKNOLOGI MAKLUMAT & KOMUNIKASI</h1>
+        </div>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" data-icon="home">HOME</a></li>
+            <li><a href="#about" data-icon="info">ABOUT</a></li>
+            <li><a href="#contact" data-icon="phone" class="ui-btn-active">CONTACT</a></li>
+            <li><a href="#projects" data-icon="grid">PROJECTS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="content">
+      <h2 style="text-align: center;">Contact Us</h2>
+
+      <a href="tel:+60104575854" data-role="button" data-icon="phone" class="contact-button">
+        <i class="fas fa-phone"></i> Call Us
+      </a>
+      <div data-role="collapsible" data-collapsed="false">
+        <h3><i class="fas fa-envelope"></i>Email Us</h3>
+        <ul data-role="listview" data-inset="true">
+          <li><a href="mailto:mistahuljannah08@gmail.com" data-role="button"><i class="fas fa-envelope"></i>
+              Email
+              Miftahul</a>
+          </li>
+          <li><a href="mailto:nurathiqah4647@gmail.com" data-role="button"><i class="fas fa-envelope"></i>
+              Email
+              Athiqah</a>
+          </li>
+          <li><a href="mailto:mailto:aishatulbalqiss@gmail.com" data-role="button"><i class="fas fa-envelope"></i>
+              Email
+              Balqis</a>
+          </li>
+        </ul>
+      </div>
+      <a href="https://wa.me/60104575854" target="_blank" data-role="button" data-icon="comment" class="contact-button">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+
+    </div>
+
+  </div>
+
+  <div data-role="footer" class="persistent-footer">
+    <h4>Copyright © DDT4C S2 2024/2025. All rights reserved.</h4>
+  </div>
+
+  <script>
+    $(document).on("pageshow", "[data-role='page']", function () {
+      var footerHeight = $(".persistent-footer").outerHeight();
+      $("[data-role='content']").css("padding-bottom", footerHeight + "px");
+    });
+    $(document).on("pagecreate", "#about", function () {
+      $(".person-card").on("taphold", function () {
+        $(this).toggleClass("highlight");
+      });
+    });
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    // Optional: Automatic slideshow
+    let timer = setInterval(function () { plusSlides(1) }, 3000);
+  </script>
+
+</body>
+
+</html>
